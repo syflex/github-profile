@@ -1,0 +1,19 @@
+body{
+    margin: 0;
+}
+
+.header, .header-item {
+    display: flex;
+    align-items: center;
+    flex-wrap: nowrap;
+}
+
+.header {
+    padding: 16px;
+    padding-right: 16px;
+    padding-left: 16px;
+    font-size: 14px;
+    line-height: 1.5;
+    color: #fff;
+    background-color: #24292e;
+}
