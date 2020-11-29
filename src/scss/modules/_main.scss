@@ -1,19 +1,41 @@
-body{
-    margin: 0;
-}
-
-.header, .header-item {
-    display: flex;
-    align-items: center;
-    flex-wrap: nowrap;
+body {
+  margin: 0;
 }
 
 .header {
-    padding: 16px;
-    padding-right: 16px;
-    padding-left: 16px;
-    font-size: 14px;
-    line-height: 1.5;
-    color: #fff;
-    background-color: #24292e;
+  display: flex;
+  align-items: center;
+  flex-wrap: nowrap;
+}
+
+.header {
+  padding: 16px;
+  color:$white;
+  background-color: $nav-color;
+  max-height: 60px;
+  padding-left: 16px;
+  padding-right: 16px;
+
+  label {
+    position: relative;
+    padding: 5px;
+  }
+
+  label:before {
+    content: "";
+    position: absolute;
+    right: 10px;
+    top: 0;
+    bottom: 0;
+    width: 20px;
+    background-image: url("https://github.githubassets.com/images/search-key-slash.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  input {
+    :active {
+      background-color:$white;
+    }
+  }
 }

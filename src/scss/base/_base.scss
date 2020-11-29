@@ -5,7 +5,6 @@
 body {
   position: relative;
   line-height: 1.5;
-  font-family: $stack-open-sans;
   background: $body-background;
   color: $font-color;
 }
@@ -16,7 +15,6 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: $stack-headings;
   font-weight: 600;
   text-transform: uppercase;
   margin: em(5) 0;
@@ -66,67 +64,8 @@ input[type="text"],
 input[type="tel"],
 textarea,
 select {
-  // width: 100%;
-  // border: none;
-  // font-weight: 400;
-  // font-size: 1em;
-  // line-height: 1.45em;
-  // outline: 0;
-  // padding: em(11) em(15);
-  // margin-bottom: em(10);
-  // background-color: $white;
-  // color: $grey;
-  // border: em(1) solid $base-color;
-  // box-shadow: 0 em(1) 0 rgba(0, 0, 0, 0.03) inset;
-  // transition: background-color 0.5s ease-in-out;
-  // border-radius: em(5);
-  // border-top: 0;
-  // border-left: 0;
-  // border-right: 0;
-  // border-bottom: em(1) solid $light-grey;
-  // -webkit-appearance: none;
+  border: none;
+  background-color: $nav-color;
+  border: em(1) solid#6a737d;
+  border-radius: em(5);
 }
-
-.btn {
-  display: block;
-  padding: em(10) em(15);
-  margin: em(20) 0;
-  font-weight: 600;
-  text-decoration: none;
-  text-transform: uppercase;
-  text-align: center;
-
-  &-inline {
-    display: inline-block;
-  }
-
-  &-flat {
-    display: flex;
-    background: transparent;
-    border: transparent;
-    cursor: pointer;
-    margin: unset;
-    :focus{
-      border: transparent;
-    }
-  }
-
-  &-base {
-    @include btnstyle($base-color, em(30), $white, $base-color);
-  }
-
-  &-alternate {
-    @include btnstyle($alternate-color, em(30), $white, $alternate-color);
-  }
-
-  &-tertiary {
-    @include btnstyle($tertiary-color, em(30), $white, $tertiary-color);
-  }
-  &-outline {
-    @include btnstyle($white, em(30), $black, $white);
-    margin: em(0) 0;
-    padding: em(10) em(5);
-  }
-}
-
-
